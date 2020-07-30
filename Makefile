@@ -4,7 +4,7 @@ flags := -w `pkg-config --cflags --libs gtk+-3.0` -export-dynamic -l SDL2 -l SDL
 all: $(target)
 
 $(target): $(target).c
-	gcc $(flags) $< -o main
+	gcc $(flags) $< -o sheep-counter
 
 clean:
 	rm -fv $(target)
